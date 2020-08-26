@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class='tasks-list'>
+        <section class='top-tasks'>
+          <h2>TOP Tasks</h2>
+          <input class='tasks-input' type='text'>
+          </section>
+          <section class='pinned'>
+          <h2>Pinned:</h2>
+          <div class='no-pinned'>No pinned tasks</div>
+          <ul class='pinned-tasks'></ul>
+          </section>
+          <section class='all-tasks'>
+          <h2>All Tasks:</h2>
+          <ul class='tasks'></ul>
+          <div class='no-tasks'>No tasks found</div>
+          </section>
+        </div>
+        <div class="error-window">
+            <div class="error-header">Ошибка!</div>
+            <div class="error-message">Нельзя создать пустую задачу.</div>
+            <button type="button" class="ok-btn">Ок</button>
+        </div>
+</body>
+</html>
