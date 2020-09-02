@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+    background-size: 15px 15px;
+    background-position: center center;
+    font-family: 'Bad Script', cursive;
+    color: #443c3c;
+}
+
+.tasks-list {
+    display: block; 
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.4;
+  }
+
+  h2 {
+    margin: 0.5em; 
+  }
+
+  .tasks-input {
+    line-height: 2; 
+  }
+
+  .task {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 10px;
+      border: solid 1px #443c3c;
+      min-width: 200px;
+      width: auto;
+
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .tick {
+    background: #443c3c;
+    margin: 10px;
+  }
+
+  .error-window {
+      
+      display: none;
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      background-color: white;
+      border: solid 3px #443c3c;
+      text-align: center;
+      max-width: 50%;
+      margin: 30px auto;
+  }
+
+  .no-tasks {
+    display: none;
+  }
