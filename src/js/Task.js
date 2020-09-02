@@ -31,6 +31,8 @@ export default class Task {
     closeButton.addEventListener('click', () => {
       errorWindow.style.display = 'none';
     });
+    const input = document.querySelector('.tasks-input');
+    input.value = '';
   }
 
   pin(e) {

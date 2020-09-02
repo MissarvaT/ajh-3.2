@@ -10,12 +10,14 @@ const noTasks = document.querySelector('.no-tasks');
 input.addEventListener('keydown', (e) => {
   const task = new Task();
   const allTasks = Array.from(document.querySelectorAll('.all-tasks .task'));
-  if (e.keyCode === 13 && input.value !== '') {
+  input.value.trim();
+  const symbolsCheck = input.value.search(/\S/);
+  if (e.keyCode === 13 && symbolsCheck !== -1) {
     task.add();
     tasks.push(task);
     allTasks.forEach((el) => el.style.display = 'flex');
     noTasks.style.display = 'none';
-  } else if (e.keyCode === 13 && input.value === '') {
+  } else if (e.keyCode === 13 && symbolsCheck === -1) {
     task.throwError();
   } else {
     const tasksToHide = allTasks.filter((el) => !el.textContent.toLowerCase().startsWith(input.value.toLowerCase()));
